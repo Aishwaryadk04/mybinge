@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+}
+.parallax{
+    
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    position: relative;
+}
+.p2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+.p2 .mycard .mycard-img{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 250px;
+    background-color: black;
+    transition: all 0.5s;
+    border-radius: 10px;
+    
+}
+.p2 .mycard .mycard-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+.mycard .mycard-content p{
+    display: none;
+    transition: all 0.5s;
+    background-color: none;
+}
+.mycard:hover .mycard-content p{
+    display: block;
+    margin:150px 30px 10px 30px;
+    text-align: justify;
+    padding: 10px;
+}
+.p2 .mycard{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    width: 350px;
+    height: 300px;
+    transition: all 0.5s;
+    border-radius: 20px;
+}
+.p2 .mycard:hover{
+    height: 450px;
+    border: solid black;
+}
+.p2 .mycard:hover .mycard-img{
+    top:-100px;
+    scale: 0.75;
+    
+}
+.mycard .mycard-content p span{
+    width: 270px;
+    color: black;
+    font-weight: bold;
+    
+   
+}
+
+.mycard .mycard-content p h6{
+    color: brown;
+    font-weight: bold;
+}
+
+p button>i{
+    margin-left: 190px;
+    font-size: 25px;
+}
